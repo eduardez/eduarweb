@@ -1,7 +1,7 @@
 
 .level_display{
     width: 100%;
-    height: auto;
+    height: 40rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,7 +12,7 @@
     position: relative;
     display: flex;
     width: 100%;
-    height: auto;
+    height: 100%;
     align-items: center;
     justify-content: center;
     flex-flow: row;

@@ -30,7 +30,7 @@ export default class ContactCard extends React.Component{
         })
         return(
             <div className='contact_card' >
-                <h1 style={{alignSelf:'center'}}>Where I Am</h1>
+                <h1 style={{alignSelf:'center'}}>{this.props.title}</h1>
                 <div className='contact_container' >
                     {mapped_rrss}
                 </div>

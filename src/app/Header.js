@@ -49,9 +49,9 @@ class Header extends React.Component{
                 <img className='navBar_logo' src={profile}/>
                 <div className='navBar_container'>
                     <Anime opacity={[0,1]} duration={5000}>
-                        {iconify('Home', <FaFortAwesome/>, '#/', this.props.activeTheme.accent, this.props.activeTheme.header_color)}
-                        {iconify('Trabajos', <FaLaravel/>, '#/trabajos',this.props.activeTheme.accent, this.props.activeTheme.header_color)}
-                        {iconify('About', <FaGitkraken/>, '#/about',this.props.activeTheme.accent, this.props.activeTheme.header_color)}
+                        {iconify(this.props.activeLang.navBar.tab_1, <FaFortAwesome/>, '#/', this.props.activeTheme.accent, this.props.activeTheme.header_color)}
+                        {iconify(this.props.activeLang.navBar.tab_2, <FaLaravel/>, '#/trabajos',this.props.activeTheme.accent, this.props.activeTheme.header_color)}
+                        {iconify(this.props.activeLang.navBar.tab_3, <FaGitkraken/>, '#/about',this.props.activeTheme.accent, this.props.activeTheme.header_color)}
                         <ThemeButton />
                     </Anime>
                 </div>
@@ -62,7 +62,8 @@ class Header extends React.Component{
 
 function mapStateToProps(state){
     return{
-        activeTheme: state.activeTheme
+        activeTheme: state.activeTheme,
+        activeLang: state.activeLang
     }
 }
 

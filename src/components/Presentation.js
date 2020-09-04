@@ -2,11 +2,7 @@ import React from 'react';
 import './css/presentation.css'
 import Anime from 'react-anime'
 
-import profile from '../assets/img/curry.jpg'
-
-
-const cosas_que_soy = ['Ingenierucho','estoy haciendo unaprinter bebe','cuesta mucho money',
-    'pero bueno que le voy a hacer']
+import profile from '../assets/img/finale.png'
 
 
 export default class Presentation extends React.Component{
@@ -39,7 +35,7 @@ export default class Presentation extends React.Component{
             easing:'cubicBezier(0.420, 0.000, 0.000, 0.995)'
         }
 
-        let adjetivo_mostrado = cosas_que_soy[this.state.pos_adjetivo % cosas_que_soy.length];
+        let adjetivo_mostrado = this.props.adj[this.state.pos_adjetivo % this.props.adj.length];
 
         return(
                 <div className='home_presentation'>

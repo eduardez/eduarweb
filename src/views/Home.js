@@ -2,6 +2,7 @@ import React from 'react';
 import './css/home.css'
 import {Presentation, Levels, ContactCard} from '../components'
 import Anime from 'react-anime'
+import {connect} from 'react-redux'
 
 
 
@@ -41,7 +42,8 @@ const rrss = [
     },
     
 ]
-export default class Home extends React.Component{
+
+class Home extends React.Component{
     constructor(props){
         super(props)
 
@@ -51,14 +53,28 @@ export default class Home extends React.Component{
         return(
             <Anime opacity={[0, 1]} duration={3000}>
                 {window.scrollTo(0, 0)}
-                <Presentation />
+                <Presentation adj={this.props.activeLang.home.adj}/>
                 <div className='home_body'>
-                    <Levels />
+                    <Levels 
+                        niveles={this.props.activeLang.home.levels} 
+                        title={this.props.activeLang.home.header_1}/>
                     <div className='dummy_div'/>
-                    <ContactCard rrss={rrss}/>
+                    <ContactCard 
+                        title={this.props.activeLang.home.header_3}
+                        rrss={rrss}/>
                     
                 </div>
            </Anime>
         )
     }
 }
+
+
+function mapStateToProps(state){
+    return{
+        activeLang: state.activeLang
+    }
+}
+
+
+export default connect(mapStateToProps)(Home)

@@ -21,7 +21,7 @@ class LevelUniverse extends React.Component{
 
     async componentDidMount(){
         var array_visib = []
-        for (let index = 0; index < this.props.activeLang.levels.length; index++) {
+        for (let index = 0; index < this.props.niveles.length; index++) {
             array_visib.push(false)
         }
         array_visib[0] = true
@@ -55,13 +55,13 @@ class LevelUniverse extends React.Component{
     }
 
     render(){
-        const niveles_mapped = this.props.activeLang.levels.map(function(nivel, index){
+        const niveles_mapped = this.props.niveles.map(function(nivel, index){
             return(
                 <LevelSprite datos={nivel} key={index} display={this.state.level_visib[index]}/>
             )
         }, this)
 
-        const niveles_dialog = this.props.activeLang.levels.map(function(nivel){
+        const niveles_dialog = this.props.niveles.map(function(nivel){
             return(
                 <div className='level_sprite_simple_container'>
                     <div className='level_sprite_simple_container_svg'
@@ -96,7 +96,7 @@ class LevelUniverse extends React.Component{
                         </div>
                 </SkyLight>
 
-                <h1 style={{alignSelf:'center'}}>What I Know</h1>
+                <h1 style={{alignSelf:'center'}}>{this.props.title}</h1>
                 <div className='level_container' >
                     <AiOutlinePlusCircle 
                         id='expand_skills' 
@@ -133,7 +133,6 @@ function mod(n, m) {
 function mapStateToProps(state){
     return{
         activeTheme: state.activeTheme,
-        activeLang: state.activeLang
     }
 }
 
