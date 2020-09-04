@@ -1,0 +1,100 @@
+
+.navBar{
+    transition: background color 0.7s;
+    -webkit-transition: background color 0.7s;
+}
+
+.navBar_link *{
+    text-decoration: none;
+    font-size: x-large;
+}
+
+.navBar_logo{
+    width: 3rem;
+    border: 0px solid;
+    margin-left: 10px;
+    border-radius: 20px;
+}
+
+/*Comportamiento*/
+
+.navBar{
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    transition: top 0.3s;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.navBar_container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 65vw;
+    padding: 0px 25px;
+}
+
+.navBar_link .icon {
+    width: 1.6em;
+    padding: 0px 15px;
+}
+
+.navBar_link .name{
+    display: none;
+}
+
+
+
+@media screen and (min-width: 1024px){
+    .navBar_logo{
+        margin-left: 20px;
+    }
+    .navBar_container{
+        width: 40vw;
+        padding-right: 0px;
+        margin-right: 20px;
+        justify-content: space-evenly;
+    }
+
+    .navBar_link .icon{
+        display: none;
+    }
+
+    .navBar_link .name{
+        display: block;
+        z-index: 1;
+    }
+
+    .underbar{
+        width: 0;
+        height: 3px;
+        background: rgba(100,100,200,0);
+        bottom: 20px;
+        position: relative;
+        transition: 0.3s cubic-bezier(.05, .45,.55,.95);
+        border-radius: 500px;
+    }
+
+    .navBar_link:hover{
+        text-shadow:0 0 5px rgba(255,255,255,0.8),0 -4px 15px rgba(255,255,255,0.5);
+    }
+
+    .navBar_link *:hover ~ .underbar{
+        position: relative;
+        width: 100%;
+        bottom: 0px;
+    }
+
+    .navBar_link{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

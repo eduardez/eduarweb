@@ -1,0 +1,18 @@
+.App{
+    min-height: 100vh !important;
+}
+
+.app_body{
+    background: var(--body_bg);
+    color: var(--body_color);
+    transition: background color 0.7s;
+    -webkit-transition: background color 0.7s;
+}
+
+.app_body{
+    padding-top: 5em;
+    position: absolute;
+    top: 0;
+    min-height: 100%;
+    width: 100vw;
+}
