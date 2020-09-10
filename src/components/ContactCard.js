@@ -23,11 +23,12 @@ export default class ContactCard extends React.Component{
                     <a  className='button rrss_link'
                         href={data.link}
                         target='_blank'
-                        style={{background:data.color, color: data.bg}}
-                        > Open </a>
+                        style={{background:data.color, color: data.bg}}> 
+                            {this.props.open_label} 
+                        </a>
                 </div>
             )
-        })
+        }, this)
         return(
             <div className='contact_card' >
                 <h1 style={{alignSelf:'center'}}>{this.props.title}</h1>

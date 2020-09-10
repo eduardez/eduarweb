@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   sodipodi:docname="testtry.svg"
+   inkscape:version="1.0 (262b4497e3, 2020-09-04)"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 34.480721 33.708008">
+  <defs
+     id="defs2">
+    <rect
+       x="88.621552"
+       y="59.985001"
+       width="80.914932"
+       height="81.847984"
+       id="rect42" />
+    <rect
+       x="84.829887"
+       y="74.642265"
+       width="42.964062"
+       height="13.730866"
+       id="rect36" />
+    <rect
+       x="93.699707"
+       y="55.726688"
+       width="22.979816"
+       height="20.71196"
+       id="rect24" />
+    <rect
+       x="36.478302"
+       y="27.586563"
+       width="113.58078"
+       height="65.196304"
+       id="rect18" />
+    <rect
+       x="118.95324"
+       y="71.375076"
+       width="144.12834"
+       height="190.44376"
+       id="rect12" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="7.9195959"
+     inkscape:cx="16.975457"
+     inkscape:cy="36.111558"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     inkscape:window-width="1504"
+     inkscape:window-height="1054"
+     inkscape:window-x="2027"
+     inkscape:window-y="188"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-89.958157,-69.707411)">
+    <text
+       xml:space="preserve"
+       id="text10"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;line-height:1.25;font-family:LeanOFYW01-Bold;-inkscape-font-specification:LeanOFYW01-Bold;white-space:pre;shape-inside:url(#rect12); ;fill-opacity:1;stroke:none;" />
+    <text
+       xml:space="preserve"
+       id="text16"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect18); ;fill-opacity:1;stroke:none;" />
+    <text
+       xml:space="preserve"
+       id="text34"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect36); ;fill-opacity:1;stroke:none;"
+       transform="translate(5.0222456,16.763275)"><tspan
+         x="84.830078"
+         y="84.006318"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:LeanOFYW01-Bold;-inkscape-font-specification:LeanOFYW01-Bold">Testtry</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       id="text40"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:36.6889px;line-height:1.25;font-family:Keraleeyam;-inkscape-font-specification:Keraleeyam;white-space:pre;shape-inside:url(#rect42); ;fill-opacity:1;stroke:none;"
+       transform="translate(9.3273538,4.7786339)"><tspan
+         x="88.621094"
+         y="87.930998"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:36.6889px;font-family:Keraleeyam;-inkscape-font-specification:Keraleeyam">T
+</tspan></tspan></text>
+  </g>
+</svg>

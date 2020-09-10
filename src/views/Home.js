@@ -44,10 +44,6 @@ const rrss = [
 ]
 
 class Home extends React.Component{
-    constructor(props){
-        super(props)
-
-    }
 
     render(){
         return(
@@ -58,10 +54,10 @@ class Home extends React.Component{
                     <Levels 
                         niveles={this.props.activeLang.home.levels} 
                         title={this.props.activeLang.home.header_1}/>
-                    <div className='dummy_div'/>
                     <ContactCard 
                         title={this.props.activeLang.home.header_3}
-                        rrss={rrss}/>
+                        rrss={rrss}
+                        open_label={this.props.activeLang.home.open}/>
                     
                 </div>
            </Anime>

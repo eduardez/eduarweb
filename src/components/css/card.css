@@ -3,20 +3,30 @@
 
     border-radius: 10px 10px 0px 0px;
     padding: 5px;
-    font-size: x-large;
+    font-size: xx-large;
     font-weight: 300;
     border-bottom: 1px solid ;
+    text-align: center;
 }
 
-.card_body_img svg path{
+.card:first-child svg path{
     fill: none;
     stroke-width: 3px;
 }
 
-
+.card_link{
+    color: inherit;
+    font-size: large;
+}
+.card_body_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /*Comoportamiento*/
 .card {
-    max-width: 95vw;
+    width: fit-content;
+    margin: auto;
 }
 
 .card:not(:first-child){
@@ -33,64 +43,67 @@
 }
 
 .card_body_text{
-    max-width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card_body_text a{
+    margin-top: 15px;
 }
 
 .card_body_img{
-    max-width: 100%;
+    width: 100%;
     margin-bottom: 20px;
 }
 
 @media screen and (min-width: 500px){
 
 
-    .card_body_img svg{
-        max-height: 25vh;
-        border-right: 1px solid;
+    .card_body_img{
+        width: 12rem;
         padding-right: 20px;
         margin-right: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
     }
 
     .card_body{
         display: flex;
         flex-direction: row;
         text-align: center; 
-        
-    }
-
-    .card_body_img svg{
-        justify-self: center;
-        max-width: 20rem;
-        height: 20rem;
-        padding: 0px;
-        border: none;
+        max-height: fit-content;
     }
 
     .card_body_text{
+        padding-left: 50px;
         border-left: 1px solid;
-        padding-left: 20px;
+        text-align: center;
     }
+
     
-    #body_reverse .card_body_text{
+    .card:nth-of-type(2n) .card_body_text {
         border-right: 1px solid;
         padding-right: 20px;
         margin-right: 20px;
         border-left: none !important;
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         width: 100%;
+        text-align: center;
+
     }
 
-    #body_reverse .card_body_text *{
-        margin: 0px;
-    }
-    #body_reverse .card_body_img *{
-        
+    .card:nth-of-type(2n)  .card_body_img{
         border-right: none !important;
     }
 
-    #body_reverse{
+    .card:nth-of-type(2n) .card_body {
         flex-direction: row-reverse;
     }
 }
@@ -98,6 +111,6 @@
 @media screen and (min-width: 1024px){
 
     .card{
-        max-width: 70vw;
+        max-width: 60vw;
     }
 }

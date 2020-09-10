@@ -17,8 +17,10 @@ class Card extends React.Component{
                 <div className='card_header'>
                     {this.props.title}
                 </div>
-                <div className='card_body' id={this.props.body_type}>
-                    <div style={{stroke: this.props.activeTheme.svg_color, fill: this.props.activeTheme.svg_color}}>
+                <div className='card_body' 
+                    style={{
+                        stroke: this.props.activeTheme.svg_color, 
+                        fill: this.props.activeTheme.svg_color}}>
                         <TrackVisibility offset={500}>
                             <ReactSVG  
                                 className='card_body_img'
@@ -27,11 +29,7 @@ class Card extends React.Component{
                                 src={this.props.image}
                             />
                         </TrackVisibility>
-                    </div>
                     <div className='card_body_text'>{this.props.card_text}</div>
-                </div>
-                <div className='card_footer'>
-                    {this.props.footer}
                 </div>
             </div>
         )

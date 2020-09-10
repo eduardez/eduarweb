@@ -3,10 +3,6 @@
 }
 
 .app_body{
-    background: var(--body_bg);
-    color: var(--body_color);
-    transition: background color 0.7s;
-    -webkit-transition: background color 0.7s;
 }
 
 .app_body{
@@ -18,5 +14,5 @@
 }
 
 h1 {
-    font-size: xxx-large;
+    text-align: center;
 }
